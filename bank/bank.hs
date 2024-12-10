@@ -1,5 +1,4 @@
 module Bank where
-
 -- Define the BankOp type using a stateful monadic approach
 newtype BankOp a = BankOp { runBankOpWith :: Float -> (a, Float) }
 
